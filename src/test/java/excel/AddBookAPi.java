@@ -20,7 +20,14 @@ public class AddBookAPi {
 		JsonAsMap.put("isbn", "bcds");
 		JsonAsMap.put("aisle", "2393");
 		JsonAsMap.put("author", "John foer");
-		
+
+		/*
+		HashMap<String, Object> JsonAsMap2 = new HashMap<>();
+		JsonAsMap2.put("lat", "-38.1256");
+		JsonAsMap2.put("lng", "25.7168");
+		JsonAsMap.put("location", JsonAsMap2);
+		*/
+
 		RestAssured.baseURI="https://rahulshettyacademy.com";
 		
 		String resp = given().header("Content-Type", "application/json")
