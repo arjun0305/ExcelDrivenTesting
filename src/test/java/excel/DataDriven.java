@@ -17,7 +17,7 @@ public class DataDriven {
 //	Once column found search for desired row data
 	
 	public ArrayList<String> GetData(String SheetName, String columnName, String rowName) throws IOException {
-		FileInputStream fis =new FileInputStream("C:\\Users\\ARJUNC\\Downloads\\demoData.xlsx");
+		FileInputStream fis =new FileInputStream("src\\test\\resources\\demoData.xlsx");
 		XSSFWorkbook workbook =new XSSFWorkbook(fis);
 		
 		ArrayList<String> Data = new ArrayList<String>();
